@@ -14,3 +14,15 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/topse
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-09-26 07:46:27.313
 !MESSAGE Indexed 'cvika1' (23 sources, 83 headers) in 12.7 sec: 4,615 declarations; 28,017 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0061%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-09-26 08:38:29.752
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-09-26 08:38:29.753
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-09-26 08:38:29.754
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-09-26 08:38:29.754
+!MESSAGE Existing sessions are:

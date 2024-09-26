@@ -89,7 +89,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  uint32_t pattern = 0b10101001110001110001110010101000;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,6 +97,18 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  for (uint8_t i = 0; i < 32; ++i) {
+		  if((pattern >> i) & 1){
+			  LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+
+		  }else{
+			  LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		  }
+		  LL_mDelay(150);
+	}
+
+
+
 
     /* USER CODE BEGIN 3 */
   }
@@ -220,7 +232,7 @@ static void MX_GPIO_Init(void)
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
 
   /**/
-  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+  LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
 
   /**/
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTC, LL_SYSCFG_EXTI_LINE13);
@@ -239,12 +251,12 @@ static void MX_GPIO_Init(void)
   LL_EXTI_Init(&EXTI_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = LD2_Pin;
+  GPIO_InitStruct.Pin = LED2_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+  LL_GPIO_Init(LED2_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
