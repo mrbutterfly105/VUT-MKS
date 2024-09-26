@@ -4739,3 +4739,39 @@
 2024-09-26 07:46:18,695 [INFO] ApiDb:452 - User favorites MCUs=[]
 2024-09-26 07:46:18,710 [INFO] ApiDb:448 - Save user favorites file /Users/topsecret/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2024-09-26 07:46:18,710 [INFO] ApiDb:452 - User favorites Boards=[]
+2024-09-26 07:52:06,954 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 934105984 Bytes (1073741824)
+2024-09-26 07:52:08,751 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 951704824 Bytes (1073741824)
+2024-09-26 07:52:15,447 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 849054728 Bytes (1073741824)
+2024-09-26 07:52:15,940 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-09-26 07:52:15,940 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-09-26 07:52:15,940 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-09-26 07:52:15,942 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-09-26 07:52:15,942 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-09-26 07:52:15,943 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-09-26 07:52:16,269 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp_save
+2024-09-26 07:52:16,590 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp
+2024-09-26 07:52:16,779 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp_save
+2024-09-26 07:52:16,982 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp
+2024-09-26 07:52:17,406 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c_save
+2024-09-26 07:52:18,248 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c
+2024-09-26 07:52:18,289 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h_save
+2024-09-26 07:52:18,544 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h
+2024-09-26 07:52:18,567 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp_save
+2024-09-26 07:52:18,701 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp
+2024-09-26 07:52:18,703 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h_save
+2024-09-26 07:52:18,799 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h
+2024-09-26 07:52:18,868 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2024-09-26 07:52:18,879 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2024-09-26 07:52:18,879 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2024-09-26 07:52:18,879 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2024-09-26 07:52:18,879 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2024-09-26 07:52:18,894 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h_save
+2024-09-26 07:52:19,051 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h
+2024-09-26 07:52:19,057 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c_save
+2024-09-26 07:52:19,253 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c
+2024-09-26 07:52:20,037 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 101mS.
+2024-09-26 07:52:20,113 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-09-26 07:52:20,927 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-09-26 07:52:28,056 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 7935mS.
+2024-09-26 07:52:28,068 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-09-26 07:52:28,071 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
