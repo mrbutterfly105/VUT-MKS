@@ -1,0 +1,16 @@
+!SESSION 2024-09-26 07:09:35.918 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=cs_CZ
+Framework arguments:  -keyring /Users/topsecret/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/topsecret/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-26 07:11:22.906
+!MESSAGE Log4j2 initialized with config file /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-26 07:11:30.462
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-26 07:46:27.313
+!MESSAGE Indexed 'cvika1' (23 sources, 83 headers) in 12.7 sec: 4,615 declarations; 28,017 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0061%)
