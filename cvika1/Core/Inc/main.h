@@ -67,18 +67,28 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+extern volatile uint32_t Tick;
+
 
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
 #define B1_Pin LL_GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
+#define S2_Pin LL_GPIO_PIN_0
+#define S2_GPIO_Port GPIOC
+#define S1_Pin LL_GPIO_PIN_1
+#define S1_GPIO_Port GPIOC
 #define USART_TX_Pin LL_GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin LL_GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
-#define LED2_Pin LL_GPIO_PIN_5
-#define LED2_GPIO_Port GPIOA
+#define LED1_Pin LL_GPIO_PIN_4
+#define LED1_GPIO_Port GPIOA
+#define Green_LED_Pin LL_GPIO_PIN_5
+#define Green_LED_GPIO_Port GPIOA
+#define LED2_Pin LL_GPIO_PIN_0
+#define LED2_GPIO_Port GPIOB
 #define TMS_Pin LL_GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin LL_GPIO_PIN_14

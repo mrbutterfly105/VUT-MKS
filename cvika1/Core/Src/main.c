@@ -31,6 +31,11 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define LED_TIME_BLINK 300
+#define LED_TIME_SHORT 100
+#define LED_TIME_LONG 1000
+#define LED_TIME_DEBUNCE 40
+
 
 /* USER CODE END PD */
 
@@ -42,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+volatile uint32_t Tick;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -50,6 +55,54 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
+
+void blink(void){
+	static uint32_t delay;
+
+	if (Tick > delay + LED_TIME_BLINK) {
+
+		LL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
+		delay = Tick;
+	}
+}
+
+void button(){
+
+	static uint32_t delay;
+	static uint32_t off_time;
+
+	if (Tick > delay + LED_TIME_DEBUNCE) {
+
+		static uint32_t old_s2;
+		static uint32_t old_s1;
+		uint32_t new_s2 = LL_GPIO_IsInputPinSet(S1_GPIO_Port, S1_Pin);
+		uint32_t new_s1 = LL_GPIO_IsInputPinSet(S2_GPIO_Port, S2_Pin);
+
+		if (old_s2 && !new_s2) { // falling edge
+			off_time = Tick + LED_TIME_SHORT;
+			LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		}
+
+
+		if(old_s1 && !new_s1){
+			off_time = Tick + LED_TIME_LONG;
+			LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		}
+
+		old_s2 = new_s2;
+		old_s1 = new_s1;
+		delay = Tick;
+	}
+
+
+
+	if (Tick > off_time) {
+		LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
+	}
+
+
+
+}
 
 /* USER CODE END PFP */
 
@@ -89,7 +142,9 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t pattern[32] = {1,0,1,0,1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,1,0,1,0,1,0,0,0};
+
+  LL_SYSTICK_EnableIT();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,20 +152,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  for (uint8_t i = 0; i < 32; ++i) {
-		  if(pattern[i]==1){
-			  LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
-
-		  }else{
-			  LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
-		  }
-		  LL_mDelay(150);
-	}
-
-
-
 
     /* USER CODE BEGIN 3 */
+	  blink();
+	  button();
   }
   /* USER CODE END 3 */
 }
@@ -230,6 +275,13 @@ static void MX_GPIO_Init(void)
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOC);
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOF);
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
+
+  /**/
+  LL_GPIO_ResetOutputPin(LED1_GPIO_Port, LED1_Pin);
+
+  /**/
+  LL_GPIO_ResetOutputPin(Green_LED_GPIO_Port, Green_LED_Pin);
 
   /**/
   LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
@@ -249,6 +301,34 @@ static void MX_GPIO_Init(void)
   EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
   EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_FALLING;
   LL_EXTI_Init(&EXTI_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = S2_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(S2_GPIO_Port, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = S1_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(S1_GPIO_Port, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = LED1_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(LED1_GPIO_Port, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = Green_LED_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(Green_LED_GPIO_Port, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = LED2_Pin;

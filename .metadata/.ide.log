@@ -468,3 +468,323 @@
 2024-10-03 08:10:55,463 [INFO] CADModel:114 - Register for checkConnection events
 2024-10-03 08:10:55,539 [INFO] OpenFileManager:328 - Restore cursor
 2024-10-03 08:12:41,156 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2024-10-03 08:16:37,945 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 722333920 Bytes (1073741824)
+2024-10-03 08:16:44,320 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 813033696 Bytes (1073741824)
+2024-10-03 08:16:44,828 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 839774432 Bytes (1073741824)
+2024-10-03 08:16:45,846 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-03 08:16:45,847 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-03 08:16:45,847 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-03 08:16:45,850 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-03 08:16:45,851 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-03 08:16:45,853 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-03 08:16:46,802 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp_save
+2024-10-03 08:16:47,657 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp
+2024-10-03 08:16:47,952 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp_save
+2024-10-03 08:16:48,398 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp
+2024-10-03 08:16:48,715 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c_save
+2024-10-03 08:16:48,970 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c
+2024-10-03 08:16:48,973 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h_save
+2024-10-03 08:16:49,177 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h
+2024-10-03 08:16:49,186 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp_save
+2024-10-03 08:16:49,295 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp
+2024-10-03 08:16:49,298 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h_save
+2024-10-03 08:16:49,472 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h
+2024-10-03 08:16:49,510 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2024-10-03 08:16:49,523 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2024-10-03 08:16:49,523 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2024-10-03 08:16:49,523 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2024-10-03 08:16:49,523 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2024-10-03 08:16:49,544 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h_save
+2024-10-03 08:16:49,750 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h
+2024-10-03 08:16:49,753 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c_save
+2024-10-03 08:16:50,302 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c
+2024-10-03 08:16:51,756 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 91mS.
+2024-10-03 08:16:51,838 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-03 08:16:52,428 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-03 08:16:52,489 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2024-10-03 08:16:52,519 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2024-10-03 08:16:54,539 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-10-03 08:16:58,964 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 7084mS.
+2024-10-03 08:16:58,973 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 3mS.
+2024-10-03 08:16:58,979 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-10-03 08:18:12,438 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2024-10-03 08:18:12,580 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-03 08:18:38,350 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2024-10-03 08:18:38,502 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-03 08:19:03,288 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 681564392 Bytes (1073741824)
+2024-10-03 08:19:05,681 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 705075312 Bytes (1073741824)
+2024-10-03 08:19:06,220 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 739269648 Bytes (1073741824)
+2024-10-03 08:19:06,729 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-03 08:19:06,731 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-03 08:19:06,731 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-03 08:19:06,732 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-03 08:19:06,732 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-03 08:19:06,732 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-03 08:19:06,908 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp_save
+2024-10-03 08:19:07,094 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp
+2024-10-03 08:19:07,167 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp_save
+2024-10-03 08:19:07,345 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp
+2024-10-03 08:19:07,572 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c_save
+2024-10-03 08:19:07,702 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c
+2024-10-03 08:19:07,707 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h_save
+2024-10-03 08:19:07,808 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h
+2024-10-03 08:19:07,812 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp_save
+2024-10-03 08:19:07,897 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp
+2024-10-03 08:19:07,900 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h_save
+2024-10-03 08:19:07,987 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h
+2024-10-03 08:19:07,989 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2024-10-03 08:19:07,994 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2024-10-03 08:19:07,994 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2024-10-03 08:19:07,995 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2024-10-03 08:19:07,995 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2024-10-03 08:19:08,009 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h_save
+2024-10-03 08:19:08,110 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h
+2024-10-03 08:19:08,115 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c_save
+2024-10-03 08:19:08,283 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c
+2024-10-03 08:19:08,771 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 41mS.
+2024-10-03 08:19:08,783 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-03 08:19:09,663 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-03 08:19:13,489 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4690mS.
+2024-10-03 08:19:13,501 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2024-10-03 08:19:13,506 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-10-03 08:19:38,485 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2024-10-03 08:20:00,639 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 817204512 Bytes (1073741824)
+2024-10-03 08:20:01,745 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 833459488 Bytes (1073741824)
+2024-10-03 08:20:03,749 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 752093328 Bytes (1073741824)
+2024-10-03 08:20:04,102 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-03 08:20:04,102 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-03 08:20:04,103 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-03 08:20:04,103 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-03 08:20:04,103 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-03 08:20:04,104 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-03 08:20:04,490 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp_save
+2024-10-03 08:20:04,688 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp
+2024-10-03 08:20:05,088 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp_save
+2024-10-03 08:20:05,335 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp
+2024-10-03 08:20:05,585 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c_save
+2024-10-03 08:20:05,760 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c
+2024-10-03 08:20:05,763 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h_save
+2024-10-03 08:20:05,850 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h
+2024-10-03 08:20:05,858 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp_save
+2024-10-03 08:20:05,960 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp
+2024-10-03 08:20:05,962 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h_save
+2024-10-03 08:20:06,038 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h
+2024-10-03 08:20:06,039 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2024-10-03 08:20:06,048 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2024-10-03 08:20:06,049 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2024-10-03 08:20:06,049 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2024-10-03 08:20:06,049 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2024-10-03 08:20:06,055 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h_save
+2024-10-03 08:20:06,149 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h
+2024-10-03 08:20:06,152 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c_save
+2024-10-03 08:20:06,289 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c
+2024-10-03 08:20:07,176 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 90mS.
+2024-10-03 08:20:07,195 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-03 08:20:08,022 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-03 08:20:13,426 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 6221mS.
+2024-10-03 08:20:13,442 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 3mS.
+2024-10-03 08:20:13,450 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-10-03 08:43:05,863 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2024-10-03 08:43:25,388 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 703670832 Bytes (1073741824)
+2024-10-03 08:43:26,718 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 721846664 Bytes (1073741824)
+2024-10-03 08:43:27,246 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 690628728 Bytes (1073741824)
+2024-10-03 08:43:27,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-03 08:43:27,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-03 08:43:27,712 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-03 08:43:27,712 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-03 08:43:27,713 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-03 08:43:27,715 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-03 08:43:28,059 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp_save
+2024-10-03 08:43:28,722 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/license.tmp
+2024-10-03 08:43:28,894 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp_save
+2024-10-03 08:43:29,037 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/gpio.tmp
+2024-10-03 08:43:29,236 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c_save
+2024-10-03 08:43:29,451 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/stm32f0xx_it.c
+2024-10-03 08:43:29,455 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h_save
+2024-10-03 08:43:29,539 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32f0xx_it.h
+2024-10-03 08:43:29,545 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp_save
+2024-10-03 08:43:29,634 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/MXTmpFiles/system.tmp
+2024-10-03 08:43:29,636 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h_save
+2024-10-03 08:43:29,714 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/stm32_assert.h
+2024-10-03 08:43:29,716 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2024-10-03 08:43:29,724 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2024-10-03 08:43:29,724 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2024-10-03 08:43:29,724 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2024-10-03 08:43:29,724 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2024-10-03 08:43:29,738 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h_save
+2024-10-03 08:43:29,891 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Inc/main.h
+2024-10-03 08:43:29,896 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c_save
+2024-10-03 08:43:30,070 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika1/Core/Src/main.c
+2024-10-03 08:43:31,110 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 62mS.
+2024-10-03 08:43:31,129 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-03 08:43:31,407 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-03 08:43:35,547 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4403mS.
+2024-10-03 08:43:35,559 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-10-03 08:43:35,565 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-10-03 09:37:05,790 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-10-03 09:37:08,821 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-10-03 09:38:57,375 [INFO] MainUpdater:2868 - connection check result : 10
+2024-10-03 09:38:57,378 [INFO] MainUpdater:2868 - connection check result : 10
+2024-10-03 09:38:57,971 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-10-03 09:38:57,972 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2024-10-03 09:38:58,110 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-10-03 09:38:58,110 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-10-03 09:38:58,111 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-10-03 09:38:58,115 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-10-03 09:38:58,128 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 831162936 Bytes (1073741824)
+2024-10-03 09:38:58,128 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-10-03 09:38:58,128 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2024-10-03 09:38:58,128 [INFO] OpenFileManager:308 - Change cursor
+2024-10-03 09:38:58,182 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2024-10-03 09:38:58,198 [INFO] Mcu:1946 - Initializing MCU STM32F030R8Tx STM32F030R8Tx STM32F030R8T6
+2024-10-03 09:38:59,215 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2024-10-03 09:38:59,817 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-10-03 09:38:59,817 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-10-03 09:38:59,817 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-10-03 09:38:59,817 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-10-03 09:38:59,818 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-10-03 09:38:59,836 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,837 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,838 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,839 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,840 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,840 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,840 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,840 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,840 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-03 09:38:59,866 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-10-03 09:39:00,451 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-10-03 09:39:00,529 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-10-03 09:39:00,767 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 916978216 Bytes (1073741824)
+2024-10-03 09:39:00,883 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-10-03 09:39:00,886 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.3.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC9 1.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 7.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 11.0.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-10-03 09:39:00,887 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Cesanta I-CUBE-Mongoose 7.13.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC10 1.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.7.2
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.9.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.1
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfTPM 3.4.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-10-03 09:39:00,888 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.1.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-10-03 09:39:00,889 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSH 1.4.17
+2024-10-03 09:39:00,890 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-10-03 09:39:01,236 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-10-03 09:39:01,245 [INFO] PinOutPanel:1499 - setPackage(STM32F030R8Tx,LQFP64)
+2024-10-03 09:39:01,820 [INFO] UtilMem:75 - Before build in PCC Used Memory: 706341904 Bytes (1073741824)
+2024-10-03 09:39:02,871 [INFO] UtilMem:75 - After build in PCC Used Memory: 746187792 Bytes (1073741824)
+2024-10-03 09:39:02,934 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,937 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,937 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,937 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,937 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,938 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,938 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,940 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:02,941 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-03 09:39:03,041 [INFO] CADModel:165 - CPN selected for project levelSTM32F030R8T6
+2024-10-03 09:39:03,043 [INFO] CADModel:114 - Register for checkConnection events
+2024-10-03 09:39:03,094 [INFO] OpenFileManager:328 - Restore cursor
