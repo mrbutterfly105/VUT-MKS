@@ -35,6 +35,7 @@
 #define LED_TIME_SHORT 100
 #define LED_TIME_LONG 1000
 #define LED_TIME_DEBUNCE 40
+#define LED_TIME_DEBUNCE_ADV 5
 
 
 /* USER CODE END PD */
@@ -67,6 +68,14 @@ void blink(void){
 }
 
 void button(){
+
+//	static uint32_t delay;
+//	static uint16_t debounce =0xFFFF;
+//
+//	if(Tick > delay + LED_TIME_DEBUNCE_ADV){
+//		debounce <<= 1;
+//	}
+
 
 	static uint32_t delay;
 	static uint32_t off_time;
