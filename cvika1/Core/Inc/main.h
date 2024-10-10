@@ -27,21 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f0xx_ll_crs.h"
-#include "stm32f0xx_ll_rcc.h"
-#include "stm32f0xx_ll_bus.h"
-#include "stm32f0xx_ll_system.h"
-#include "stm32f0xx_ll_exti.h"
-#include "stm32f0xx_ll_cortex.h"
-#include "stm32f0xx_ll_utils.h"
-#include "stm32f0xx_ll_pwr.h"
-#include "stm32f0xx_ll_dma.h"
-#include "stm32f0xx_ll_usart.h"
-#include "stm32f0xx_ll_gpio.h"
-
-#if defined(USE_FULL_ASSERT)
-#include "stm32_assert.h"
-#endif /* USE_FULL_ASSERT */
+#include "stm32f0xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -73,38 +59,34 @@ extern volatile uint32_t Tick;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define B1_Pin LL_GPIO_PIN_13
+#define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
-#define S2_Pin LL_GPIO_PIN_0
+#define S2_Pin GPIO_PIN_0
 #define S2_GPIO_Port GPIOC
-#define S1_Pin LL_GPIO_PIN_1
+#define S1_Pin GPIO_PIN_1
 #define S1_GPIO_Port GPIOC
-#define USART_TX_Pin LL_GPIO_PIN_2
+#define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
-#define USART_RX_Pin LL_GPIO_PIN_3
+#define USART_RX_Pin GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
-#define LED1_Pin LL_GPIO_PIN_4
+#define LED1_Pin GPIO_PIN_4
 #define LED1_GPIO_Port GPIOA
-#define Green_LED_Pin LL_GPIO_PIN_5
+#define Green_LED_Pin GPIO_PIN_5
 #define Green_LED_GPIO_Port GPIOA
-#define LED2_Pin LL_GPIO_PIN_0
+#define LED2_Pin GPIO_PIN_0
 #define LED2_GPIO_Port GPIOB
-#define TMS_Pin LL_GPIO_PIN_13
+#define SCT_NOE_Pin GPIO_PIN_10
+#define SCT_NOE_GPIO_Port GPIOB
+#define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
-#define TCK_Pin LL_GPIO_PIN_14
+#define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
-#ifndef NVIC_PRIORITYGROUP_0
-#define NVIC_PRIORITYGROUP_0         ((uint32_t)0x00000007) /*!< 0 bit  for pre-emption priority,
-                                                                 4 bits for subpriority */
-#define NVIC_PRIORITYGROUP_1         ((uint32_t)0x00000006) /*!< 1 bit  for pre-emption priority,
-                                                                 3 bits for subpriority */
-#define NVIC_PRIORITYGROUP_2         ((uint32_t)0x00000005) /*!< 2 bits for pre-emption priority,
-                                                                 2 bits for subpriority */
-#define NVIC_PRIORITYGROUP_3         ((uint32_t)0x00000004) /*!< 3 bits for pre-emption priority,
-                                                                 1 bit  for subpriority */
-#define NVIC_PRIORITYGROUP_4         ((uint32_t)0x00000003) /*!< 4 bits for pre-emption priority,
-                                                                 0 bit  for subpriority */
-#endif
+#define SCT_CLK_Pin GPIO_PIN_3
+#define SCT_CLK_GPIO_Port GPIOB
+#define SCT_SDI_Pin GPIO_PIN_4
+#define SCT_SDI_GPIO_Port GPIOB
+#define SCT_NLA_Pin GPIO_PIN_5
+#define SCT_NLA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
