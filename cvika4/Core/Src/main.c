@@ -110,7 +110,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	static enum { SHOW_POT, SHOW_VOLT, SHOW_TEMP } state = SHOW_POT;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -137,6 +137,7 @@ int main(void)
   HAL_ADCEx_Calibration_Start(&hadc);
   HAL_ADC_Start_IT(&hadc);
   sct_init();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -146,7 +147,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+	  static enum { SHOW_POT, SHOW_VOLT, SHOW_TEMP } state = SHOW_POT;
+	  static uint32_t tick_at_press = 0;
 
 	  //sct_value(raw_pot*500.9/4095, raw_pot*9/4095);
 	  uint8_t s1 = HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin);
@@ -154,10 +156,12 @@ int main(void)
 
 	  if(!s1 && s2){
 		  state = SHOW_TEMP;
+		  tick_at_press = HAL_GetTick();
 
 	  }else if(s1 && !s2){
 
 		  state = SHOW_VOLT;
+		  tick_at_press = HAL_GetTick();
 	  }
 
 
@@ -168,29 +172,28 @@ int main(void)
 
 		  break;
 	  case SHOW_VOLT:
-
+		  // S1
 		  uint32_t voltage = 330 * (*VREFINT_CAL_ADDR) / raw_volt;
+		  sct_value(voltage, 0);
 
-		  sct_value(voltage, voltage *9/4095);
-		  HAL_Delay(1000);
-
-		  state = SHOW_POT;
 		  break;
 
 	  case SHOW_TEMP:
-
-		  int32_t temperature = (raw_temp - (int32_t)(*TEMP30_CAL_ADDR));
-		  temperature = temperature * (int32_t)(110 - 30);
-		  temperature = temperature / (int32_t)(*TEMP110_CAL_ADDR - *TEMP30_CAL_ADDR);
+		  // S2
+		  int32_t temperature = (raw_temp - (int32_t) (*TEMP30_CAL_ADDR));
+		  temperature = temperature * (int32_t) (110 - 30);
+		  temperature = temperature / (int32_t) (*TEMP110_CAL_ADDR - *TEMP30_CAL_ADDR);
 		  temperature = temperature + 30;
 
-		  sct_value(temperature, temperature *9/4095);
-		  HAL_Delay(1000);
-		  state = SHOW_POT;
+		  sct_value(temperature, 0);
+
 		  break;
 
 	  }
 
+	  if((tick_at_press + 1000) < HAL_GetTick()){
+		  state = SHOW_POT;
+	  }
 
 	  HAL_Delay(50);
 
@@ -291,6 +294,14 @@ static void MX_ADC_Init(void)
   /** Configure for the selected ADC regular channel to be converted.
   */
   sConfig.Channel = ADC_CHANNEL_TEMPSENSOR;
+  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure for the selected ADC regular channel to be converted.
+  */
+  sConfig.Channel = ADC_CHANNEL_VREFINT;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
     Error_Handler();
