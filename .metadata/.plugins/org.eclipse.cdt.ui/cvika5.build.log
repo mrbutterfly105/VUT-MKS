@@ -1,0 +1,10 @@
+08:20:53 **** Incremental Build of configuration Debug for project cvika5 ****
+make -j7 all 
+arm-none-eabi-size   cvika5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13980	    112	   2248	  16340	   3fd4	cvika5.elf
+Finished building: default.size.stdout
+ 
+
+08:20:53 Build Finished. 0 errors, 0 warnings. (took 271ms)
+

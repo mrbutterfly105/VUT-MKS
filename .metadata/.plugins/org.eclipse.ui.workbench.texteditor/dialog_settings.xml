@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&#x0D;&#x0A;&#x09;  sct_init();&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;  for (uint16_t i = 0; i &lt; 10; ++i) {&#x0D;&#x0A;&#x09;&#x09;  sct_value(i *111);&#x0D;&#x0A;&#x09;&#x09;  HAL_Delay(500);&#x0D;&#x0A;&#x09;  }"/>
+		<item key="selection" value="SHOW_POT"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="SHOW_POT"/>
+			<item value="raw_volt"/>
 			<item value="&#x0D;&#x0A;&#x09;  sct_init();&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;  for (uint16_t i = 0; i &lt; 10; ++i) {&#x0D;&#x0A;&#x09;&#x09;  sct_value(i *111);&#x0D;&#x0A;&#x09;&#x09;  HAL_Delay(500);&#x0D;&#x0A;&#x09;  }"/>
 			<item value="&#x09;  sct_init();"/>
 			<item value="&#x0D;&#x0A;&#x09;static uint32_t delay;&#x0D;&#x0A;&#x09;static uint32_t delay2;&#x0D;&#x0A;&#x09;static uint32_t off_time;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;if (Tick &gt; delay + LED_TIME_DEBUNCE) {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;static uint32_t old_s2;&#x0D;&#x0A;&#x09;&#x09;uint32_t new_s2 = LL_GPIO_IsInputPinSet(S2_GPIO_Port, S2_Pin);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;if (old_s2 &amp;&amp; !new_s2) { // falling edge&#x0D;&#x0A;&#x09;&#x09;&#x09;off_time = Tick + LED_TIME_SHORT;&#x0D;&#x0A;&#x09;&#x09;&#x09;LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;old_s2 = new_s2;&#x0D;&#x0A;&#x09;&#x09;delay = Tick;&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;&#x0D;&#x0A;&#x09;if (Tick &gt; delay2 + LED_TIME_SHORT) {&#x0D;&#x0A;&#x09;&#x09;if (Tick &gt; off_time) {&#x0D;&#x0A;&#x09;&#x09;&#x09;LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;&#x09;&#x09;delay2 = Tick;&#x0D;&#x0A;&#x09;}"/>
 		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1054"/>
+		<item key="DIALOG_Y_ORIGIN" value="120"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>
