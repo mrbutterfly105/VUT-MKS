@@ -1293,3 +1293,337 @@
 2024-10-24 08:34:28,805 [INFO] CADModel:114 - Register for checkConnection events
 2024-10-24 08:34:28,850 [INFO] OpenFileManager:328 - Restore cursor
 2024-10-24 08:34:57,880 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,587x182,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:06:46,861 [INFO] MainUpdater:2868 - connection check result : 10
+2024-10-24 09:06:46,866 [INFO] MainUpdater:2868 - connection check result : 10
+2024-10-24 09:06:47,527 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-10-24 09:06:47,527 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2024-10-24 09:06:47,687 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-10-24 09:06:47,687 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-10-24 09:06:47,688 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-10-24 09:06:47,692 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-10-24 09:06:47,700 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 799384712 Bytes (1073741824)
+2024-10-24 09:06:47,701 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-10-24 09:06:47,701 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2024-10-24 09:06:47,701 [INFO] OpenFileManager:308 - Change cursor
+2024-10-24 09:06:47,734 [INFO] Mcu:1946 - Initializing MCU STM32F030R8Tx STM32F030R8Tx STM32F030R8T6
+2024-10-24 09:06:48,649 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2024-10-24 09:06:49,139 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-10-24 09:06:49,139 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-10-24 09:06:49,139 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-10-24 09:06:49,139 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-10-24 09:06:49,139 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-10-24 09:06:49,145 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,145 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,146 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,147 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-10-24 09:06:49,161 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-10-24 09:06:49,704 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-10-24 09:06:49,811 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,812 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,812 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,812 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,812 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,815 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,815 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,815 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2024-10-24 09:06:49,824 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-10-24 09:06:50,065 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 891943704 Bytes (1073741824)
+2024-10-24 09:06:50,197 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-10-24 09:06:50,201 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.3.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC9 1.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-WB05N 1.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 7.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 11.0.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-10-24 09:06:50,201 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Cesanta I-CUBE-Mongoose 7.13.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC10 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.7.2
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.9.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.1
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfTPM 3.4.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-10-24 09:06:50,202 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.1.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-10-24 09:06:50,203 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSH 1.4.17
+2024-10-24 09:06:50,203 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-10-24 09:06:50,469 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-10-24 09:06:50,478 [INFO] PinOutPanel:1499 - setPackage(STM32F030R8Tx,LQFP64)
+2024-10-24 09:06:50,894 [INFO] UtilMem:75 - Before build in PCC Used Memory: 793934936 Bytes (1073741824)
+2024-10-24 09:06:51,235 [INFO] UtilMem:75 - After build in PCC Used Memory: 791840392 Bytes (1073741824)
+2024-10-24 09:06:51,256 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,258 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,260 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,260 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-10-24 09:06:51,330 [INFO] CADModel:165 - CPN selected for project levelSTM32F030R8T6
+2024-10-24 09:06:51,330 [INFO] CADModel:114 - Register for checkConnection events
+2024-10-24 09:06:51,372 [INFO] OpenFileManager:328 - Restore cursor
+2024-10-24 09:08:07,420 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 962247464 Bytes (1073741824)
+2024-10-24 09:08:08,887 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 778254920 Bytes (1073741824)
+2024-10-24 09:08:10,096 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 858729440 Bytes (1073741824)
+2024-10-24 09:08:10,515 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-24 09:08:10,515 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 09:08:10,515 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-24 09:08:10,515 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-24 09:08:10,516 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-24 09:08:10,516 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-24 09:08:10,517 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-24 09:08:10,643 [INFO] Argument:319 - Argument : hdmavalue: null
+2024-10-24 09:08:10,643 [INFO] Argument:321 - 	 sub Args: 
+2024-10-24 09:08:10,643 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 09:08:10,644 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 09:08:10,644 [INFO] Argument:319 - Argument : Initvalue: null
+2024-10-24 09:08:10,645 [INFO] Argument:321 - 	 sub Args: 
+2024-10-24 09:08:10,645 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 09:08:10,645 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 09:08:10,645 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 09:08:10,645 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 09:08:10,645 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 09:08:10,645 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 09:08:10,645 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 09:08:10,645 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 09:08:10,646 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-24 09:08:10,646 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 09:08:10,646 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : Lockvalue: null
+2024-10-24 09:08:10,646 [INFO] Argument:329 - Argument : Lockvalue: null
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : Statevalue: null
+2024-10-24 09:08:10,646 [INFO] Argument:329 - Argument : Statevalue: null
+2024-10-24 09:08:10,646 [INFO] Argument:319 - Argument : Parentvalue: null
+2024-10-24 09:08:10,647 [INFO] Argument:329 - Argument : Parentvalue: null
+2024-10-24 09:08:10,647 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2024-10-24 09:08:10,648 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2024-10-24 09:08:11,022 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/license.tmp_save
+2024-10-24 09:08:11,367 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/license.tmp
+2024-10-24 09:08:11,868 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/gpio.tmp_save
+2024-10-24 09:08:12,170 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/gpio.tmp
+2024-10-24 09:08:12,479 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma.tmp_save
+2024-10-24 09:08:12,568 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma.tmp
+2024-10-24 09:08:12,570 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma_GV.tmp_save
+2024-10-24 09:08:12,643 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma_GV.tmp
+2024-10-24 09:08:12,651 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_it.c_save
+2024-10-24 09:08:12,880 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_it.c
+2024-10-24 09:08:12,888 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_it.h_save
+2024-10-24 09:08:13,015 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_it.h
+2024-10-24 09:08:13,035 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_hal_msp.c_save
+2024-10-24 09:08:13,334 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_hal_msp.c
+2024-10-24 09:08:13,337 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/system.tmp_save
+2024-10-24 09:08:13,459 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/system.tmp
+2024-10-24 09:08:13,466 [INFO] CodeEngine:311 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_hal_conf.h_save
+2024-10-24 09:08:13,606 [INFO] CodeEngine:335 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_hal_conf.h
+2024-10-24 09:08:13,842 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/main.h_save
+2024-10-24 09:08:14,147 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/main.h
+2024-10-24 09:08:14,154 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/main.c_save
+2024-10-24 09:08:14,372 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/main.c
+2024-10-24 09:08:15,109 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 130mS.
+2024-10-24 09:08:15,144 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-24 09:08:15,976 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-24 09:08:16,090 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2024-10-24 09:08:16,523 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2024-10-24 09:08:22,498 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 7349mS.
+2024-10-24 09:08:22,507 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-10-24 09:08:22,510 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-10-24 09:11:54,582 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2024-10-24 09:11:54,789 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:13:26,606 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2024-10-24 09:13:26,696 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:13:26,927 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2024-10-24 09:13:26,982 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:13:30,098 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2024-10-24 09:13:30,687 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:13:31,032 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2024-10-24 09:13:31,073 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 09:14:04,197 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 927534248 Bytes (1073741824)
+2024-10-24 09:14:06,724 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 948331744 Bytes (1073741824)
+2024-10-24 09:14:07,921 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 802057976 Bytes (1073741824)
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-24 09:14:08,275 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-10-24 09:14:08,277 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : hdmavalue: null
+2024-10-24 09:14:08,321 [INFO] Argument:321 - 	 sub Args: 
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 09:14:08,321 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : Initvalue: null
+2024-10-24 09:14:08,321 [INFO] Argument:321 - 	 sub Args: 
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 09:14:08,321 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 09:14:08,321 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 09:14:08,321 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 09:14:08,321 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 09:14:08,321 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : Lockvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : Lockvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : Statevalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : Statevalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : Parentvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : Parentvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2024-10-24 09:14:08,322 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2024-10-24 09:14:08,510 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/license.tmp_save
+2024-10-24 09:14:08,829 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/license.tmp
+2024-10-24 09:14:09,140 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/gpio.tmp_save
+2024-10-24 09:14:09,554 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/gpio.tmp
+2024-10-24 09:14:09,896 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma.tmp_save
+2024-10-24 09:14:09,979 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma.tmp
+2024-10-24 09:14:09,980 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma_GV.tmp_save
+2024-10-24 09:14:10,059 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/dma_GV.tmp
+2024-10-24 09:14:10,067 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_it.c_save
+2024-10-24 09:14:10,311 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_it.c
+2024-10-24 09:14:10,316 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_it.h_save
+2024-10-24 09:14:10,491 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_it.h
+2024-10-24 09:14:10,509 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_hal_msp.c_save
+2024-10-24 09:14:10,800 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/stm32f0xx_hal_msp.c
+2024-10-24 09:14:10,804 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/system.tmp_save
+2024-10-24 09:14:10,933 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/MXTmpFiles/system.tmp
+2024-10-24 09:14:10,942 [INFO] CodeEngine:311 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_hal_conf.h_save
+2024-10-24 09:14:11,092 [INFO] CodeEngine:335 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/stm32f0xx_hal_conf.h
+2024-10-24 09:14:11,341 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/main.h_save
+2024-10-24 09:14:11,620 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Inc/main.h
+2024-10-24 09:14:11,625 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/main.c_save
+2024-10-24 09:14:11,823 [INFO] CodeEngine:279 - Generated code: /Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/Core/Src/main.c
+2024-10-24 09:14:12,721 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 209mS.
+2024-10-24 09:14:12,729 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-10-24 09:14:13,481 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2024-10-24 09:14:18,348 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 5606mS.
+2024-10-24 09:14:18,363 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 3mS.
+2024-10-24 09:14:18,372 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
