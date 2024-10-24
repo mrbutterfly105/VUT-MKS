@@ -90,7 +90,7 @@ static void uart_byte_avilable(uint8_t c){
 	static uint16_t cnt;
 	static char data[CMD_BUFFER_LEN];
 
-	if(cnt < CMD_BUFFER_LEN && c >= 32 && c <= 126){
+	if(cnt > CMD_BUFFER_LEN && c >= 32 && c <= 126){
 		data[cnt++] = c;
 	}
 	if((c == '\n' || c == '\r' ) && cnt > 0){
@@ -135,7 +135,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_UART_Receive_DMA(&huart2, uart_rx_buf, RX_BUFFER_LEN);
+  	  HAL_UART_Receive_DMA(&huart2, uart_rx_buf, RX_BUFFER_LEN);
 
   /* USER CODE END 2 */
 

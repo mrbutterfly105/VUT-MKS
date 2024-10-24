@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  00010530  00000000  00000000  0002a5c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00009002  00000000  00000000  0003aaf0  2**0
+ 18 .debug_line   00009000  00000000  00000000  0003aaf0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0005ea4b  00000000  00000000  00043af2  2**0
+ 19 .debug_str    0005ea4b  00000000  00000000  00043af0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  00001ebc  00000000  00000000  000a2540  2**2
+ 20 .debug_frame  00001ebc  00000000  00000000  000a253c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006b  00000000  00000000  000a43fc  2**0
+ 21 .debug_line_str 0000006b  00000000  00000000  000a43f8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -309,11 +309,11 @@ static void uart_byte_avilable(uint8_t c){
 	static uint16_t cnt;
 	static char data[CMD_BUFFER_LEN];
 
-	if(cnt > CMD_BUFFER_LEN && c >= 32 && c <= 126){
+	if(cnt <= CMD_BUFFER_LEN && c >= 32 && c <= 126){
  800028c:	4b19      	ldr	r3, [pc, #100]	; (80002f4 <uart_byte_avilable+0x74>)
  800028e:	881b      	ldrh	r3, [r3, #0]
  8000290:	2b40      	cmp	r3, #64	; 0x40
- 8000292:	d912      	bls.n	80002ba <uart_byte_avilable+0x3a>
+ 8000292:	d812      	bhi.n	80002ba <uart_byte_avilable+0x3a>
  8000294:	1dfb      	adds	r3, r7, #7
  8000296:	781b      	ldrb	r3, [r3, #0]
  8000298:	2b1f      	cmp	r3, #31
@@ -410,7 +410,7 @@ int main(void)
  8000312:	f000 f87f 	bl	8000414 <MX_USART2_UART_Init>
   /* USER CODE BEGIN 2 */
 
-  	  HAL_UART_Receive_DMA(&huart2, uart_rx_buf, RX_BUFFER_LEN);
+  HAL_UART_Receive_DMA(&huart2, uart_rx_buf, RX_BUFFER_LEN);
  8000316:	4916      	ldr	r1, [pc, #88]	; (8000370 <main+0x74>)
  8000318:	4b16      	ldr	r3, [pc, #88]	; (8000374 <main+0x78>)
  800031a:	2240      	movs	r2, #64	; 0x40

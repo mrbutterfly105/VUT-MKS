@@ -1,4 +1,34 @@
-08:20:48 **** Incremental Build of configuration Debug for project cvika5 ****
+08:31:47 **** Incremental Build of configuration Debug for project cvika5 ****
+make -j7 all 
+arm-none-eabi-size   cvika5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13980	    112	   2248	  16340	   3fd4	cvika5.elf
+Finished building: default.size.stdout
+ 
+08:32:08 **** Incremental Build of configuration Debug for project cvika5 ****
+make -j7 all 
+arm-none-eabi-size   cvika5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13980	    112	   2248	  16340	   3fd4	cvika5.elf
+Finished building: default.size.stdout
+ 
+08:39:55 **** Incremental Build of configuration Debug for project cvika5 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:75:9: error: too many arguments to function 'HAL_UART_Transmit_DMA'
+   75 |         HAL_UART_Transmit_DMA(&huart2, (uint8_t*)buf, n, HAL_MAX_DELAY);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:289,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:1572:19: note: declared here
+ 1572 | HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+08:40:14 **** Incremental Build of configuration Debug for project cvika5 ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "cvika5.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -12,10 +42,17 @@ Finished building: default.size.stdout
  
 Finished building: cvika5.list
  
-08:20:53 **** Incremental Build of configuration Debug for project cvika5 ****
+08:45:48 **** Incremental Build of configuration Debug for project cvika5 ****
 make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvika5.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika5.elf
+ 
 arm-none-eabi-size   cvika5.elf 
+arm-none-eabi-objdump -h -S  cvika5.elf  > "cvika5.list"
    text	   data	    bss	    dec	    hex	filename
   13980	    112	   2248	  16340	   3fd4	cvika5.elf
 Finished building: default.size.stdout
+ 
+Finished building: cvika5.list
  
