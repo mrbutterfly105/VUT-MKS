@@ -1,35 +1,14 @@
-09:58:44 **** Incremental Build of configuration Debug for project cvika5 ****
+07:57:11 **** Incremental Build of configuration Debug for project cvika6 ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "cvika5.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: cvika5.elf
+arm-none-eabi-gcc -o "cvika6.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika6/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika6.elf
  
-arm-none-eabi-size   cvika5.elf 
-arm-none-eabi-objdump -h -S  cvika5.elf  > "cvika5.list"
+arm-none-eabi-size   cvika6.elf 
+arm-none-eabi-objdump -h -S  cvika6.elf  > "cvika6.list"
    text	   data	    bss	    dec	    hex	filename
-  20732	    112	   2328	  23172	   5a84	cvika5.elf
+   9524	     20	   1708	  11252	   2bf4	cvika6.elf
 Finished building: default.size.stdout
  
-Finished building: cvika5.list
- 
-09:58:51 **** Incremental Build of configuration Debug for project cvika5 ****
-make -j7 all 
-arm-none-eabi-size   cvika5.elf 
-   text	   data	    bss	    dec	    hex	filename
-  20732	    112	   2328	  23172	   5a84	cvika5.elf
-Finished building: default.size.stdout
- 
-09:59:41 **** Incremental Build of configuration Debug for project cvika5 ****
-make -j7 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "cvika5.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika5/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: cvika5.elf
- 
-arm-none-eabi-size   cvika5.elf 
-arm-none-eabi-objdump -h -S  cvika5.elf  > "cvika5.list"
-   text	   data	    bss	    dec	    hex	filename
-  20736	    112	   2328	  23176	   5a88	cvika5.elf
-Finished building: default.size.stdout
- 
-Finished building: cvika5.list
+Finished building: cvika6.list
  

@@ -150,7 +150,7 @@ void uart_process_command( char *data){
 
 			HAL_I2C_Mem_Read(&hi2c1, EPROM_ADDR, i, I2C_MEMADD_SIZE_16BIT, &value, sizeof(value), 1000);
 
-			printf(" '%d'", value);
+			printf(" '%02x'", value);
 
 			if (i==7) {
 				printf("\n");

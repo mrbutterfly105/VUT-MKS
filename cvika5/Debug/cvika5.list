@@ -583,7 +583,7 @@ void uart_process_command( char *data){
  8000486:	1e03      	subs	r3, r0, #0
  8000488:	d132      	bne.n	80004f0 <uart_process_command+0x290>
 		uint8_t value;
-		for (uint8_t i = 0; i < 0xF; ++i) {
+		for (uint8_t i = 0; i <= 0xF; ++i) {
  800048a:	2317      	movs	r3, #23
  800048c:	18fb      	adds	r3, r7, r3
  800048e:	2200      	movs	r2, #0
@@ -608,7 +608,7 @@ void uart_process_command( char *data){
  80004b0:	21a0      	movs	r1, #160	; 0xa0
  80004b2:	f001 fa77 	bl	80019a4 <HAL_I2C_Mem_Read>
 
-			printf(" '%d'", value);
+			printf(" '%02x'", value);
  80004b6:	197b      	adds	r3, r7, r5
  80004b8:	781b      	ldrb	r3, [r3, #0]
  80004ba:	001a      	movs	r2, r3
@@ -625,7 +625,7 @@ void uart_process_command( char *data){
 				printf("\n");
  80004ce:	200a      	movs	r0, #10
  80004d0:	f003 fc6c 	bl	8003dac <putchar>
-		for (uint8_t i = 0; i < 0xF; ++i) {
+		for (uint8_t i = 0; i <= 0xF; ++i) {
  80004d4:	2217      	movs	r2, #23
  80004d6:	18bb      	adds	r3, r7, r2
  80004d8:	18ba      	adds	r2, r7, r2
@@ -635,7 +635,7 @@ void uart_process_command( char *data){
  80004e0:	2317      	movs	r3, #23
  80004e2:	18fb      	adds	r3, r7, r3
  80004e4:	781b      	ldrb	r3, [r3, #0]
- 80004e6:	2b0e      	cmp	r3, #14
+ 80004e6:	2b0f      	cmp	r3, #15
  80004e8:	d9d4      	bls.n	8000494 <uart_process_command+0x234>
 			}
 
