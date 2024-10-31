@@ -1,10 +1,30 @@
-07:04:22 **** Incremental Build of configuration Debug for project cvika4 ****
+09:36:59 **** Incremental Build of configuration Debug for project cvika4 ****
 make -j7 all 
-arm-none-eabi-size   cvika4.elf 
-   text	   data	    bss	    dec	    hex	filename
-  17472	     20	   1796	  19288	   4b58	cvika4.elf
-Finished building: default.size.stdout
- 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:171:19: error: too few arguments to function 'sct_value'
+  171 |                   sct_value(raw_pot*500.9/4095, raw_pot*9/4095);
+      |                   ^~~~~~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/sct.h:17:6: note: declared here
+   17 | void sct_value(uint16_t value, uint8_t led, uint8_t dot);
+      |      ^~~~~~~~~
+../Core/Src/main.c:177:19: error: too few arguments to function 'sct_value'
+  177 |                   sct_value(voltage, 0);
+      |                   ^~~~~~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/sct.h:17:6: note: declared here
+   17 | void sct_value(uint16_t value, uint8_t led, uint8_t dot);
+      |      ^~~~~~~~~
+../Core/Src/main.c:188:19: error: too few arguments to function 'sct_value'
+  188 |                   sct_value(temperature, 0);
+      |                   ^~~~~~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/sct.h:17:6: note: declared here
+   17 | void sct_value(uint16_t value, uint8_t led, uint8_t dot);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
 
-07:04:22 Build Finished. 0 errors, 0 warnings. (took 289ms)
+09:36:59 Build Failed. 4 errors, 0 warnings. (took 349ms)
 
