@@ -1,49 +1,564 @@
-09:43:08 **** Incremental Build of configuration Debug for project cvika6 ****
+18:39:22 **** Incremental Build of configuration Debug for project cvika7 ****
 make -j7 all 
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "cvika6.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika6/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: cvika6.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:381:17: warning: unused variable 'msg' [-Wunused-variable]
+  381 |         int16_t msg;
+      |                 ^~~
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:484:82: error: 'raw_acceleration' undeclared (first use in this function)
+  484 |                                         lis2dw12_acceleration_raw_get(&lis2dw12, raw_acceleration);
+      |                                                                                  ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:484:82: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:534:9: error: expected declaration or statement at end of input
+  534 |         }
+      |         ^
+At top level:
+../Core/Src/main.c:525:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  525 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:508:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  508 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:40:24 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:381:17: warning: unused variable 'msg' [-Wunused-variable]
+  381 |         int16_t msg;
+      |                 ^~~
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:481:45: error: 'time' undeclared (first use in this function)
+  481 |                         if(HAL_GetTick() > (time + 50)){
+      |                                             ^~~~
+../Core/Src/main.c:481:45: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:477:33: warning: unused variable 'counter' [-Wunused-variable]
+  477 |                         uint8_t counter = HAL_GetTick();
+      |                                 ^~~~~~~
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:535:9: error: expected declaration or statement at end of input
+  535 |         }
+      |         ^
+At top level:
+../Core/Src/main.c:526:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  526 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:509:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  509 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:41:32 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:381:17: warning: unused variable 'msg' [-Wunused-variable]
+  381 |         int16_t msg;
+      |                 ^~~
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:491:39: error: 'cnt' undeclared (first use in this function); did you mean 'int'?
+  491 |                                 if (++cnt > 20){
+      |                                       ^~~
+      |                                       int
+../Core/Src/main.c:491:39: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:489:47: warning: unused variable 'counter' [-Wunused-variable]
+  489 |                                 static int8_t counter;
+      |                                               ^~~~~~~
+../Core/Src/main.c:479:33: warning: unused variable 'counter' [-Wunused-variable]
+  479 |                         uint8_t counter =0;
+      |                                 ^~~~~~~
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:537:9: error: expected declaration or statement at end of input
+  537 |         }
+      |         ^
+At top level:
+../Core/Src/main.c:528:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  528 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:511:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  511 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:41:52 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:381:17: warning: unused variable 'msg' [-Wunused-variable]
+  381 |         int16_t msg;
+      |                 ^~~
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:492:41: error: 'cnt' undeclared (first use in this function); did you mean 'int'?
+  492 |                                         cnt = 0;
+      |                                         ^~~
+      |                                         int
+../Core/Src/main.c:492:41: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+  536 |         }
+      |         ^
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:527:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:510:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:41:58 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:381:17: warning: unused variable 'msg' [-Wunused-variable]
+  381 |         int16_t msg;
+      |                 ^~~
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+  536 |         }
+      |         ^
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:527:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:510:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:44:03 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+  536 |         }
+      |         ^
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:527:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:510:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:45:44 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:536:9: error: expected declaration or statement at end of input
+  536 |         }
+      |         ^
+At top level:
+../Core/Src/main.c:527:14: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |         void Error_Handler(void)
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:510:14: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |         void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:49:53 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:536:17: error: expected declaration or statement at end of input
+  536 |                 }
+      |                 ^
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:17: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:527:22: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |                 void Error_Handler(void)
+      |                      ^~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:510:22: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |                 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:50:45 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:17: error: expected declaration or statement at end of input
+  536 |                 }
+      |                 ^
+At top level:
+../Core/Src/main.c:527:22: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |                 void Error_Handler(void)
+      |                      ^~~~~~~~~~~~~
+../Core/Src/main.c:510:22: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |                 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:51:14 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:536:17: error: expected declaration or statement at end of input
+  536 |                 }
+      |                 ^
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:536:17: error: expected declaration or statement at end of input
+At top level:
+../Core/Src/main.c:527:22: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  527 |                 void Error_Handler(void)
+      |                      ^~~~~~~~~~~~~
+../Core/Src/main.c:455:14: warning: 'StartAcceleroTask' defined but not used [-Wunused-function]
+  455 |         void StartAcceleroTask(void const * argument)
+      |              ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:510:22: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  510 |                 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:52:47 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:530:17: error: expected declaration or statement at end of input
+  530 |                 }
+      |                 ^
+At top level:
+../Core/Src/main.c:521:22: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  521 |                 void Error_Handler(void)
+      |                      ^~~~~~~~~~~~~
+../Core/Src/main.c:504:22: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  504 |                 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+18:53:18 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
  
-arm-none-eabi-size   cvika6.elf 
-arm-none-eabi-objdump -h -S  cvika6.elf  > "cvika6.list"
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
    text	   data	    bss	    dec	    hex	filename
-  12340	   2068	   1772	  16180	   3f34	cvika6.elf
+  26612	    132	   6284	  33028	   8104	cvika7.elf
 Finished building: default.size.stdout
  
-Finished building: cvika6.list
+Finished building: cvika7.list
  
-09:43:12 **** Incremental Build of configuration Debug for project cvika6 ****
+18:55:25 **** Incremental Build of configuration Debug for project cvika7 ****
 make -j7 all 
-arm-none-eabi-size   cvika6.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
    text	   data	    bss	    dec	    hex	filename
-  12340	   2068	   1772	  16180	   3f34	cvika6.elf
+  26628	    132	   6284	  33044	   8114	cvika7.elf
 Finished building: default.size.stdout
  
-09:43:53 **** Incremental Build of configuration Debug for project cvika6 ****
-make -j7 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "cvika6.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika6/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: cvika6.elf
+Finished building: cvika7.list
  
-arm-none-eabi-size   cvika6.elf 
-arm-none-eabi-objdump -h -S  cvika6.elf  > "cvika6.list"
+18:55:30 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-size   cvika7.elf 
    text	   data	    bss	    dec	    hex	filename
-  12340	   2068	   1772	  16180	   3f34	cvika6.elf
+  26628	    132	   6284	  33044	   8114	cvika7.elf
 Finished building: default.size.stdout
  
-Finished building: cvika6.list
- 
-09:45:50 **** Incremental Build of configuration Debug for project cvika6 ****
+18:55:59 **** Incremental Build of configuration Debug for project cvika7 ****
 make -j7 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "cvika6.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika6/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: cvika6.elf
- 
-arm-none-eabi-size   cvika6.elf 
-arm-none-eabi-objdump -h -S  cvika6.elf  > "cvika6.list"
+arm-none-eabi-size   cvika7.elf 
    text	   data	    bss	    dec	    hex	filename
-  12340	   2068	   1772	  16180	   3f34	cvika6.elf
+  26628	    132	   6284	  33044	   8114	cvika7.elf
 Finished building: default.size.stdout
  
-Finished building: cvika6.list
+19:03:22 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26752	    132	   6292	  33176	   8198	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:03:28 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-size   cvika7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26752	    132	   6292	  33176	   8198	cvika7.elf
+Finished building: default.size.stdout
+ 
+19:09:27 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:10:42 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-size   cvika7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+19:11:05 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-size   cvika7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+19:12:11 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:463:32: error: initializer element is not constant
+  463 |         static uint32_t time = HAL_GetTick();
+      |                                ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+19:18:32 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26612	    132	   6284	  33028	   8104	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:18:38 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-size   cvika7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26612	    132	   6284	  33028	   8104	cvika7.elf
+Finished building: default.size.stdout
+ 
+19:21:25 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:23:39 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:24:08 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26628	    132	   6284	  33044	   8114	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:25:20 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:403:17: warning: unused variable 'i' [-Wunused-variable]
+  403 |         uint8_t i = 0;
+      |                 ^
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26516	    132	   6284	  32932	   80a4	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:25:47 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26500	    132	   6284	  32916	   8094	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
+ 
+19:27:39 **** Incremental Build of configuration Debug for project cvika7 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:30: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |                 .write_reg = platform_write,
+      |                              ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:30: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cvika7.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/topsecret/Documents/škola/FEKT/sem7/MKS/cvika/cvika7/STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvika7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvika7.elf
+ 
+arm-none-eabi-size   cvika7.elf 
+arm-none-eabi-objdump -h -S  cvika7.elf  > "cvika7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26484	    132	   6284	  32900	   8084	cvika7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvika7.list
  
