@@ -1,0 +1,5 @@
+../Core/Src/sct.c:112:6:sct_init	8	static
+../Core/Src/sct.c:116:6:sct_led	24	static
+../Core/Src/sct.c:131:6:sct_value	32	static
+../Core/Src/sct.c:151:6:sct_baragraph	24	static
+../Core/Src/sct.c:158:6:sct_universal_baragraph	24	static

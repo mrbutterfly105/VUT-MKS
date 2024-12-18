@@ -1,0 +1,5 @@
+../Core/Src/sct.c:112:6:sct_init	1
+../Core/Src/sct.c:116:6:sct_led	2
+../Core/Src/sct.c:131:6:sct_value	5
+../Core/Src/sct.c:159:6:sct_baragraph	1
+../Core/Src/sct.c:166:6:sct_universal_baragraph	3
