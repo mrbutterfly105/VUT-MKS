@@ -22,7 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sct.h"
-#include "1wire.h"
+
 
 /* USER CODE END Includes */
 
@@ -33,8 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define CONVERT_T_DELAY 750
-#define NON_BLOCK_DELAY 80
+
 
 /* USER CODE END PD */
 
@@ -59,6 +58,11 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_ADC_Init(void);
 /* USER CODE BEGIN PFP */
+static volatile uint32_t raw_pot;
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+	raw_pot = HAL_ADC_GetValue(hadc);
+}
 
 
 /* USER CODE END PFP */
@@ -100,11 +104,13 @@ int main(void)
 	MX_USART2_UART_Init();
 	MX_ADC_Init();
 	/* USER CODE BEGIN 2 */
-	OWInit();
+
 	sct_init();
 
 	HAL_ADCEx_Calibration_Start(&hadc);
-	HAL_ADC_Start(&hadc);
+	HAL_ADC_Start_IT(&hadc);
+
+
 
 
 
@@ -113,80 +119,53 @@ int main(void)
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 
-	uint32_t delay = 0;
-	uint32_t delay_btn = 0;
-	uint32_t sec_tens = 0;
-	uint32_t sec = 0;
-	uint32_t min = 0;
-	sct_value(0, 0, 2);
+	//uint32_t delay_pot = (raw_pot * 501) / 4096;
+	//uint32_t delay_pot = ((raw_pot * 501) / 4096);
+	uint32_t delay_pot = ((raw_pot * 481) / 1024)+20;
 
-	static enum {RUN, STOP} state = STOP;
+	uint16_t led_binary_index = 0b1;
 
 	while (1)
 	{
-		if (state == RUN) {
+		led_binary_index = 0b1;
+		sct_universal_baragraph(led_binary_index);
 
+		delay_pot = ((raw_pot * 481) / 1024)+20;
+		HAL_Delay(delay_pot);
 
-			if (HAL_GetTick()>delay + 100) {
+		led_binary_index = 0b11;
+		sct_universal_baragraph(led_binary_index);
 
-				sct_value(sec*10 + sec_tens, min, 2);
-				sec_tens++;
+		delay_pot = ((raw_pot * 481) / 1024)+20;
+		HAL_Delay(delay_pot);
 
+		led_binary_index = 0b111;
+		sct_universal_baragraph(led_binary_index);
 
-				delay = HAL_GetTick();
-			}
-			if (sec_tens >= 10) {
-				sec++;
-				sec_tens = 0;
+		delay_pot = ((raw_pot * 481) / 1024)+20;
+		HAL_Delay(delay_pot);
 
-			}
-			if (sec >= 60) {
-				sec = 0;
+		for (uint8_t i = 0; i < 7; ++i) {
 
-				min++;
-			}
-			if(min >= 8){
-				min = 0;
-			}
-		}else if(state == STOP){
+			led_binary_index <<= 1;
+			sct_universal_baragraph(led_binary_index);
+
+			delay_pot = ((raw_pot * 481) / 1024)+20;
+			HAL_Delay(delay_pot);
 
 		}
-		if (HAL_GetTick() > delay_btn + 40) {
 
-			if(HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin)==0 && state == RUN){
-				HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
-				HAL_Delay(50);
-				HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
-				state = STOP;
-			}
-			if(HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin)==0 && state == STOP){
-				HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
-				HAL_Delay(50);
-				HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
-				state = RUN;
-			}
-			if (HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin)==0) {
+		for (uint8_t i = 0; i < 8; ++i) {
+			led_binary_index >>= 1;
+			sct_universal_baragraph(led_binary_index);
 
-				HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 1);
-				HAL_Delay(100);
-				HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 0);
-				delay = 0;
-				sec_tens = 0;
-				sec = 0;
-				min = 0;
-				sct_value(sec*10 + sec_tens, min, 2);
-				state = STOP;
-			}
-			delay_btn = HAL_GetTick();
+			delay_pot = ((raw_pot * 481) / 1024)+20;
+			HAL_Delay(delay_pot);
+
 		}
 
 
-		//	  OWConvertAll();
-		//	  HAL_Delay(CONVERT_T_DELAY);
-		//
-		//	  OWReadTemperature(&ds18b20_temp);
-		//
-		//	  sct_value(ds18b20_temp/10, 0, 2);
+
 
 
 		/* USER CODE END WHILE */
@@ -277,9 +256,9 @@ static void MX_ADC_Init(void)
 
 	/** Configure for the selected ADC regular channel to be converted.
 	 */
-	sConfig.Channel = ADC_CHANNEL_1;
+	sConfig.Channel = ADC_CHANNEL_0;
 	sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
-	sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+	sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
 	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
 	{
 		Error_Handler();
