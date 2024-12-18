@@ -18,6 +18,6 @@ void sct_value(uint16_t value, uint8_t led, uint8_t dot);
 
 void sct_baragraph(uint8_t led);
 
-void sct_universal_baragraph(uint8_t led_binary_index);
+void sct_baragraph_value(uint8_t led_binary_index, uint16_t value, uint8_t dot);
 
 #endif /* INC_SCT_H_ */

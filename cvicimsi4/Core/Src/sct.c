@@ -156,12 +156,6 @@ void sct_value(uint16_t value, uint8_t led, uint8_t dot){
 
 }
 
-void sct_baragraph(uint8_t led){
-
-	uint32_t reg = 0;
-	reg |= reg_values[7][led];
-	sct_led(reg);
-}
 
 void sct_universal_baragraph(uint8_t led_binary_index){
 	uint32_t reg = 0;
@@ -175,5 +169,40 @@ void sct_universal_baragraph(uint8_t led_binary_index){
 
 	sct_led(reg);
 
+}
+
+
+void sct_baragraph_value(uint8_t led_binary_index, uint16_t value, uint8_t dot){
+	uint32_t reg = 0;
+	for (uint8_t i = 1; i < 9; ++i) {
+		if (led_binary_index & 0b1) {
+			reg |= reg_values[7][i];
+		}
+
+		led_binary_index >>= 1;
+	}
+	if(dot == 0){
+		reg |= reg_values[0][value / 100 % 10];
+		reg |= reg_values[1][value / 10 % 10];
+		reg |= reg_values[2][value / 1 % 10];
+	}else if (dot == 1) {
+		reg |= reg_values[3][value / 100 % 10];
+		reg |= reg_values[1][value / 10 % 10];
+		reg |= reg_values[2][value / 1 % 10];
+	}else if(dot == 2){
+		reg |= reg_values[0][value / 100 % 10];
+		reg |= reg_values[4][value / 10 % 10];
+		reg |= reg_values[2][value / 1 % 10];
+	}else if(dot == 3){
+		reg |= reg_values[0][value / 100 % 10];
+		reg |= reg_values[1][value / 10 % 10];
+		reg |= reg_values[5][value / 1 % 10];
+	}
+
+
+	sct_led(reg);
 
 }
+
+
+
